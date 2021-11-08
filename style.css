@@ -1,0 +1,129 @@
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+}
+
+body {
+    margin: 0;
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: var(--very-light-gray);
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    margin: 5em 2em;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: red;
+    max-width: 375px;
+}
+
+.cards h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    color: var(--very-light-gray);
+    text-transform: uppercase;
+    font-size: 2.7em;
+}
+
+.cards p {
+    color: var(--transparent-white);
+    line-height: 1.5em;
+}
+
+img {
+    width: 60px;
+}
+
+.card {
+    padding: 3em;
+}
+
+.card1 {
+    background-color: var(--bright-orange);
+}
+
+.card2 {
+    background-color: var(--dark-cyan);
+}
+
+.card3 {
+    background-color: var(--very-dark-cyan);
+}
+
+button {
+    font-family: 'Lexend Deca', sans-serif; 
+    background-color: var(--very-light-gray);
+    border: 2px solid var(--very-light-gray);
+    border-radius: 50px;
+    padding: 0.8em 2em;
+    font-size: 1em;
+    margin: 1em 0 0 0;
+    width: 65%;
+}
+
+.btn1 {
+    color: var(--bright-orange);
+}
+
+.btn2 {
+    color: var(--dark-cyan);
+}
+
+.btn3 {
+    color: var(--very-dark-cyan);
+}
+
+@media screen and (min-width: 950px) {
+    
+    .cards {
+        display: flex;
+        flex-direction: row;
+        margin: 5em;
+        max-width: 1000px;
+    }
+
+    .card p {
+        margin-bottom: 6em;
+        font-size: 1.1em;
+        width: 94%;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    button {
+        margin-top: auto;
+    }
+
+    button:hover {
+        background: none;
+        color: var(--very-light-gray);
+    }
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin: 1em;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
